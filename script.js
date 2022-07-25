@@ -60,6 +60,9 @@ function newRound() {
         switchToHome();
         return;
     }
+	R.value = '';
+	G.value = '';
+	B.value = '';
     correctAnswerR = Math.floor(Math.random() * 256);
     if (correctAnswerR == 256) correctAnswerR--;
     correctAnswerG = Math.floor(Math.random() * 256);
