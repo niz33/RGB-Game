@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="container" id="homeContainer">
+    <h1>RGB Guessing Game</h1>
+    <button type="button" id="startButton">
+    <p>Start</p>
+    </button>
+</div>
+<div class="container" id="gameContainer">
+	<h2 id="currentScore1">Current Score: 0</h2>
+    <h2>Guess the RGB value for this color</h2>
+    <div class="colorBox" id="gameColorBox"></div>
+    <div id="answerInputArea">
+        <label for="R">
+        <p>Red</p>
+        </label>
+        <input type="number" class="numberInput" id="R" name="R" min="0" max="255">
+        <label for="G">
+        <p>Green</p>
+        </label>
+        <input type="number" class="numberInput" id="G" name="G" min="0" max="255">
+        <label for="B">
+        <p>Blue</p>
+        </label>
+        <input type="number" class="numberInput" id="B" name="B" min="0" max="255">
+    </div>
+    <button id="showAnswerButton">
+    <p>Show Answer</p>
+    </button>
+</div>
+<div class="container" id="answerContainer">
+    <h2 id="currentScore2">Current Score: 0</h2>
+    <div class="container" id="answerCardContainer">
+        <div class="answerCard" id="correctAnswer">
+            <h3>Correct Answer</h3>
+            <h3 id="correctAnswerRGB">255 255 255</h3>
+            <div class="colorBox" id="correctAnswerColorBox"></div>
+        </div>
+        <div class="answerCard" id="playerAnswer">
+            <h3>Your Answer</h3>
+            <h3 id="playerAnswerRGB" >255 255 255</h3>
+            <div class="colorBox" id="playerAnswerColorBox"></div>
+        </div>
+    </div>
+	<button id="continueButton">
+    <p>Continue</p>
+    </button>
+</div>
+</body>
+</html>

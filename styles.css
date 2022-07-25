@@ -1,0 +1,106 @@
+* {
+    border-style: solid;
+    border-width: 0;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+html, body {
+    height: 100%;
+}
+body {
+	background-color: rgba(15,17,23,1.00);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    color: white;
+    font-size: 48px;
+    margin: 36px;
+    text-shadow: 0px 8px 16px #00000040;
+}
+h2 {
+    color: white;
+    font-size: 36px;
+    margin: 24px;
+    text-shadow: 0px 8px 16px #00000040;
+}
+h3 {
+    color: white;
+    font-size: 24px;
+    margin: 12px;
+    text-shadow: 0px 8px 16px #00000040;
+}
+p {
+	color: white;
+    font-size: 24px;
+    margin: 12px;
+    text-shadow: 0px 8px 16px #00000040;
+}
+button {
+    padding: 0px 12px;
+    border-radius: 8px;
+    background: rgba(31,35,47,1);
+    box-shadow: 0px 8px 16px #00000080;
+}
+button:hover {
+    background-color: rgba(99,102,111,1);
+}
+button:active {
+    box-shadow: 0px 4px 8px #00000040;
+}
+input[type=number]::-webkit-inner-spin-button {
+	opacity: 0.3;
+}
+.numberInput{
+	margin: 12px;
+	height: 36px;
+	width: 60px;
+	border-radius: 8px;
+	color: white;
+    font-size: 18px;
+	padding-left: 8px;
+	background: rgba(31,35,47,1);
+	box-shadow: inset 0px 4px 8px #00000080;
+	
+}
+.numberInput:focus {
+	outline: none;
+	background-color: rgba(99,102,111,1);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 120px;
+}
+.colorBox {
+    height: 180px;
+    width: 180px;
+    background-color: white;
+    margin: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px #00000080;
+}
+.answerCard{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#answerCardContainer{
+	flex-direction: row;
+	padding-bottom: 36px;
+}
+#answerInputArea {
+    margin: 24px;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
