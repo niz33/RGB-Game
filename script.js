@@ -51,6 +51,9 @@ function startGame() {
     score = 0;
     round = 0;
     newRound();
+	temp = `Score: ${score}`;
+    currentScore1.textContent = temp;
+    currentScore2.textContent = temp;
 }
 
 function newRound() {
